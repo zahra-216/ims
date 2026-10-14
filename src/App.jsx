@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/layout/Sidebar';
 import Header from './components/layout/Header';
 import DashboardOverview from './pages/dashboard/DashboardOverview';
+import ClientSettings from './pages/settings/ClientSettings';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
               <Route path="/attendance" element={<div className="bg-white p-6 rounded-lg shadow-sm"><h1 className="text-2xl font-bold text-[#2D4373]">QR Attendance Tracking</h1></div>} />
               <Route path="/fees" element={<div className="bg-white p-6 rounded-lg shadow-sm"><h1 className="text-2xl font-bold text-[#2D4373]">Fees & Payments Module</h1></div>} />
               <Route path="/announcements" element={<div className="bg-white p-6 rounded-lg shadow-sm"><h1 className="text-2xl font-bold text-[#2D4373]">Announcements & Calendar</h1></div>} />
-              <Route path="/settings" element={<div className="bg-white p-6 rounded-lg shadow-sm"><h1 className="text-2xl font-bold text-[#2D4373]">Client Branding Settings</h1></div>} />
+              <Route path="/settings" element={<ClientSettings />} />
             </Routes>
           </main>
         </div>
