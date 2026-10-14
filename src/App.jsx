@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/layout/Sidebar';
 import Header from './components/layout/Header';
+import DashboardOverview from './pages/dashboard/DashboardOverview';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           {/* Page Content View */}
           <main className="mt-16 p-6 flex-1">
             <Routes>
-              <Route path="/" element={<div className="bg-white p-6 rounded-lg shadow-sm"><h1 className="text-2xl font-bold text-[#2D4373]">Dashboard Overview</h1><p className="text-gray-600 mt-2">Welcome back, Hasmath Hima! IMS Dashboard is loading...</p></div>} />
+              <Route path="/" element={<DashboardOverview />} />
               <Route path="/admissions" element={<div className="bg-white p-6 rounded-lg shadow-sm"><h1 className="text-2xl font-bold text-[#2D4373]">Admissions Module</h1></div>} />
               <Route path="/students" element={<div className="bg-white p-6 rounded-lg shadow-sm"><h1 className="text-2xl font-bold text-[#2D4373]">Student Management</h1></div>} />
               <Route path="/academics" element={<div className="bg-white p-6 rounded-lg shadow-sm"><h1 className="text-2xl font-bold text-[#2D4373]">Academic Management</h1></div>} />
